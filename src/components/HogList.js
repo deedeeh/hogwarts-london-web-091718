@@ -7,10 +7,8 @@ class HogList extends React.Component {
     render() {
         return ( 
             <div>
-                <Grid>
-                    {this.props.hogs.map(hog => 
-                    <Hog hog={ hog } 
-                    />)}
+                <Grid padded='vertically'>
+                    {this.props.hogs.map(hog => <Hog key={ hog.name } hog={ hog } />)}
                 </Grid>
             </div>
         )
