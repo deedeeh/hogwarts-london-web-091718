@@ -31,7 +31,7 @@ class Hog extends React.Component {
                             <p>greased: {hog.greased ? 'Yes' : 'No' }</p>
                             <p>Medal Achieved: { hog.medal }</p>
                         </Card.Description></div>)
-                    : null}
+                    : null }
                 </Card.Content>
             </Card>
         )

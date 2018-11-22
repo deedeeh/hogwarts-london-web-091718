@@ -1,15 +1,17 @@
 import React from 'react'
 import Hog from './Hog'
-import { Card } from 'semantic-ui-react'
+import { Grid } from 'semantic-ui-react'
 
 class HogList extends React.Component {
 
     render() {
         return ( 
             <div>
-                {this.props.hogs.map(hog => 
-                <Hog hog={ hog } 
-            />)}
+                <Grid>
+                    {this.props.hogs.map(hog => 
+                    <Hog hog={ hog } 
+                    />)}
+                </Grid>
             </div>
         )
     }
